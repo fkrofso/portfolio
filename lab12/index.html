@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо — Джейсон Стетхем</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <img class="avatar" src="images/photo.jpg" alt="Фото Джейсона Стетхема">
+        <div>
+            <h1>Джейсон Стетхем</h1>
+            <p class="profession">Майбутній веброзробник</p>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <ul class="container menu">
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#skills">Навички</a></li>
+            <li><a href="#projects">Проєкти</a></li>
+            <li><a href="#education">Освіта</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section id="about">
+        <h2>Про мене</h2>
+        <p>Мене звати <strong>Джейсон Стетхем</strong>. Я студент ІТ-спеціальності, захоплююсь
+        веброзробкою та створенням зручних інтерфейсів. Моя мета – стати <em>професійним
+        веброзробником</em>.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Навички</h2>
+        <div class="two-col">
+            <div>
+                <h3>Технології</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3 (Flexbox)</li>
+                    <li>Git і GitHub</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div>
+                <h3>План вивчення</h3>
+                <ol>
+                    <li>JavaScript</li>
+                    <li>Адаптивна верстка</li>
+                    <li>React</li>
+                </ol>
+            </div>
+        </div>
+        <table>
+            <caption>Мої професійні компетентності</caption>
+            <thead>
+                <tr><th>Технологія</th><th>Рівень</th><th>Де використовувалась</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>HTML</td><td>Високий</td><td>Верстка портфоліо</td></tr>
+                <tr><td>CSS</td><td>Середній</td><td>Оформлення сторінок</td></tr>
+                <tr><td>Git</td><td>Середній</td><td>Навчальні проєкти</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Проєкти</h2>
+        <div class="projects">
+            <article class="project">
+                <span class="label">HTML</span>
+                <img src="images/project1.jpg" alt="Проєкт: вебпортфоліо">
+                <h3>Вебпортфоліо</h3>
+                <p>Персональна сторінка зі списками, таблицею та формою.</p>
+            </article>
+            <article class="project">
+                <span class="label">CSS</span>
+                <img src="images/project2.jpg" alt="Проєкт: навігаційне меню">
+                <h3>Навігаційне меню</h3>
+                <p>Горизонтальне меню на Flexbox з ефектом наведення.</p>
+            </article>
+            <article class="project">
+                <span class="label">Forms</span>
+                <img src="images/project3.jpg" alt="Проєкт: форма облікового запису">
+                <h3>Форма облікового запису</h3>
+                <p>Багатополева форма з вибором області та міста.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Освіта</h2>
+        <ul class="timeline">
+            <li><strong>2024 – теперішній час</strong> – студент спеціальності «Інженерія програмного забезпечення».</li>
+            <li><strong>2025</strong> – курс «Основи веброзробки (HTML + CSS)».</li>
+        </ul>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакти</h2>
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="name">Ім’я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="topic">Тема:</label>
+                <select id="topic" name="topic">
+                    <option>Співпраця</option>
+                    <option>Питання</option>
+                    <option>Інше</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Джейсон Стетхем</p>
+</footer>
+</body>
+</html>
