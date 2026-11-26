@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Обліковий запис</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+<div class="account">
+    <h1>Обліковий запис</h1>
+    <form action="#" method="post">
+        <div class="row">
+            <label for="name">Ім’я:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="row">
+            <label for="pass">Новий пароль:</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+        <div class="row">
+            <label for="pass2">Підтвердження:</label>
+            <input type="password" id="pass2" name="pass2">
+        </div>
+        <p class="note">Увага! Пароль чутливий до регістра символів.</p>
+
+        <div class="row">
+            <label for="org">Організація:</label>
+            <input type="text" id="org" name="org">
+        </div>
+
+        <div class="row">
+            <span class="group">Адрес:</span>
+        </div>
+        <div class="row sub">
+            <label for="index">Індекс:</label>
+            <input type="text" id="index" name="index" class="short">
+        </div>
+        <div class="row sub">
+            <label for="region">Область:</label>
+            <select id="region" name="region">
+                <option>---Виберіть область---</option>
+                <option>Київська</option>
+                <option>Львівська</option>
+                <option>Одеська</option>
+            </select>
+        </div>
+        <div class="row sub">
+            <label for="city">Місто:</label>
+            <select id="city" name="city">
+                <option>---Виберіть місто---</option>
+                <option>Київ</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+            </select>
+        </div>
+        <div class="row sub">
+            <label for="street">Вулиця:</label>
+            <input type="text" id="street" name="street">
+            <label for="house" class="mini">Будинок:</label>
+            <input type="text" id="house" name="house" class="tiny">
+            <label for="office" class="mini">Офіс:</label>
+            <input type="text" id="office" name="office" class="tiny">
+        </div>
+
+        <div class="row">
+            <span class="group">Телефон:</span>
+        </div>
+        <div class="row sub">
+            <label for="code">Код:</label>
+            <input type="text" id="code" name="code" class="short">
+        </div>
+        <div class="row sub">
+            <label for="phone">Номер:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <div class="row">
+            <label for="contact">Контактне лице:</label>
+            <input type="text" id="contact" name="contact">
+        </div>
+        <div class="row">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Готово</button>
+            <button type="reset">Відміна</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

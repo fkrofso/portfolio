@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+    <header>
+        <h1>Джейсон Стетхем</h1>
+        <p class="profession">Майбутній фахівець у сфері ІТ</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#skills">Мої навички</a></li>
+            <li><a href="#interests">Професійні інтереси</a></li>
+            <li><a href="#goals">Мої цілі</a></li>
+            <li><a href="#competences">Компетентності</a></li>
+            <li><a href="#feedback">Зворотний зв’язок</a></li>
+            <li><a href="account.html">Обліковий запис</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <img src="images/photo.jpg" alt="Моє фото">
+        <div>
+            <h2>Джейсон Стетхем</h2>
+            <p><strong>Майбутній веброзробник</strong></p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>Про мене</h2>
+        <img class="about-img" src="images/photo.jpg" alt="Фото автора портфоліо">
+        <p>Мене звати <strong>Джейсон Стетхем</strong>. Я студент(ка) спеціальності, пов’язаної з
+        інформаційними технологіями. Люблю створювати зручні вебсторінки та вивчати нові інструменти.</p>
+        <p>Це портфоліо я поповнюю етап за етапом: на цьому етапі додано навички, інтереси та цілі.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Мої навички</h2>
+        <div class="two-col">
+            <div>
+                <h3>Інструменти (маркований список)</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Google Workspace</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Технології, що вивчаються (нумерований список)</h3>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Адаптивна верстка</li>
+                </ol>
+            </div>
+        </div>
+        <img class="project-img" src="images/project1.jpg" alt="Ілюстрація навчального проєкту">
+    </section>
+
+    <section id="interests">
+        <h2>Професійні інтереси</h2>
+        <ul>
+            <li>Фронтенд-розробка</li>
+            <li>UI/UX-дизайн</li>
+            <li>Системи контролю версій</li>
+            <li>Вебдоступність</li>
+        </ul>
+    </section>
+
+    <section id="goals">
+        <h2>Мої цілі</h2>
+        <ol>
+            <li>Опанувати HTML і CSS на рівні, достатньому для верстки сайтів.</li>
+            <li>Вивчити JavaScript.</li>
+            <li>Опублікувати портфоліо на GitHub Pages.</li>
+            <li>Пройти першу стажування у сфері веброзробки.</li>
+        </ol>
+    </section>
+
+    <section id="competences">
+        <h2>Мої професійні компетентності</h2>
+        <table>
+            <caption>Рівень володіння технологіями</caption>
+            <thead>
+                <tr>
+                    <th>Технологія</th>
+                    <th>Рівень володіння</th>
+                    <th>Де використовувалась</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>HTML</td><td>Високий</td><td>Верстка сторінок портфоліо</td></tr>
+                <tr><td>CSS</td><td>Середній</td><td>Оформлення блоків, меню, таблиць і форм</td></tr>
+                <tr><td>Git</td><td>Середній</td><td>Навчальні проєкти</td></tr>
+                <tr><td>GitHub</td><td>Початковий</td><td>Зберігання коду портфоліо</td></tr>
+                <tr><td>Figma</td><td>Початковий</td><td>Макети інтерфейсів</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="feedback">
+        <h2>Зворотний зв’язок</h2>
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="name">Ім’я:</label>
+                <input type="text" id="name" name="name" placeholder="Ваше ім’я" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-row">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX">
+            </div>
+            <div class="form-row">
+                <label for="topic">Тема:</label>
+                <select id="topic" name="topic">
+                    <option>Пропозиція співпраці</option>
+                    <option>Питання щодо проєктів</option>
+                    <option>Відгук про портфоліо</option>
+                    <option>Інше</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Текст повідомлення"></textarea>
+            </div>
+            <div class="form-row">
+                <span class="label">Бажаний спосіб відповіді:</span>
+                <label class="inline"><input type="radio" name="reply" value="email" checked> Email</label>
+                <label class="inline"><input type="radio" name="reply" value="phone"> Телефон</label>
+            </div>
+            <div class="form-row">
+                <label class="inline"><input type="checkbox" name="agree" required> Погоджуюсь на обробку даних</label>
+            </div>
+            <div class="buttons">
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </div>
+        </form>
+    </section>
+    <footer><small>© 2026 Джейсон Стетхем</small></footer>
+</div>
+</body>
+</html>
